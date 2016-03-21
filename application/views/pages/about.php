@@ -1,0 +1,1 @@
+    <em>site codé par Elric Reffuveille pour CoupeHaieNet</em>

@@ -1,0 +1,86 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/font-face";
+
+/* Mise en place des polices */
+
+    /* Champagne et Limousines */
+    @include font-face(ChampLimBoldItalic, /fonts/champagne__limousines_bold_italic-webfont);
+    @include font-face(ChampLimBold, /fonts/champagne__limousines_bold-webfont);
+    @include font-face(ChampLimItalic, /fonts/champagne__limousines_italic-webfont);
+    @include font-face(ChampLim, /fonts/champagne__limousines-webfont);
+
+    /* Parade */
+    @include font-face(Parade, /fonts/parade-one-webfont);
+
+
+/* Défintion des variables */
+$fontTitle : 'Parade';
+$fontText : 'ChampLim';
+$fontBold : 'ChampLimBold';
+$fontItalic : 'ChampLimItalic';
+$fontBoldItalic : 'ChamLimBoldItalic';
+
+$colorBG : #F0E6D4;
+$colorFont : #877E6E;
+$colorBanSup : #CCBEA6;
+$colorBanInf : #E1D7C7;
+$colorTonique : #93C840;
+
+
+/* Page */
+html {
+    background-color: $colorBG;
+    color: $colorFont;
+    font-family: $fontText;
+}
+
+
+/* Textes */
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: $fontTitle;
+}
+em {
+    font-family: $fontItalic;
+}
+strong {
+    font-family: $fontBold;
+}
+
+
+/* Bannière supérieure */
+#banSup {
+    background-color: $colorBanSup;
+}
+
+
+/* Menu */
+#primaryMenu {
+    display: flex;
+    margin: 1em;
+}
+#accueilLink {
+    display: flex;
+}
+#secondaryMenu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.firstElementSecondaryMenu {
+    padding: 1em;
+}
+
+
+/* Corps de la page */
+
+
+/* Bannière inférieure */
+
