@@ -1,1 +1,1 @@
-            <p>Un test de premier usage de CodeIgniter, un framework PHP</p>
+<p>Un test de premier usage de <em>CodeIgniter</em>, un framework PHP</p>
