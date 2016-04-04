@@ -24,8 +24,6 @@
         <!-- jQueryUI 1.11.4 // UI et Form -->
         <!-- jQueryMobile 1.4.5 // Cross-Platform -->
         <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         
         <!-- Inclusion des librairies tierces -->
         <!-- FlexSlider // Gestion de slider -->
