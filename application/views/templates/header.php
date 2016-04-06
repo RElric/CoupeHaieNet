@@ -49,7 +49,7 @@
         <!-- CSS -->
         
         <!-- Inclusion des feuilles personnelles -->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/stylesheets/screen.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/stylesheets/screen.css" />
     </head>
     
     <body>
@@ -58,103 +58,48 @@
         <header id="banSup">
             <nav id="primaryMenu">
                 <a href="<?php echo base_url();?>accueil" id="accueilLink">
-                    <img 
-                        src="<?php echo base_url();?>img/logoMD.png" 
-                        alt="logo du site" 
-                        srcset="
-                            <?php echo base_url();?>img/logoHD.png 2x, 
-                            <?php echo base_url();?>img/logoLD.png 0.5x
-                        "
-                    />
-                    <h1 id="titreGlobal">CoupeHaieNet</h1>
+                    <h1 id="titreGlobal">Coupe Haie Net</h1>
                 </a>
                 <ul id="secondaryMenu">
                     <li class="firstElementSecondaryMenu">
-                        <a href="<?php echo base_url();?>actualites">
-                            <img 
-                                src="<?php echo base_url();?>img/actusMD.png" 
-                                alt="ic&#244;ne actualit&eacute;s" 
-                                srcset="
-                                    <?php echo base_url();?>img/actusHD.png 2x, 
-                                    <?php echo base_url();?>img/actusLD.png 0.5x
-                                "
-                            />
+                        <a href="<?php echo base_url();?>/actualites">
+                            <img src="<?php echo base_url();?>/assets/css/img/news.png" />
                             <label>Actualit&eacute;s</label>
                         </a>
                     </li>
                     <li class="firstElementSecondaryMenu">
-                        <a href="<?php echo base_url();?>realisations">
-                            <img 
-                                src="<?php echo base_url();?>img/reaMD.png" 
-                                alt="ic&#244;ne r&eacute;alisations" 
-                                srcset="
-                                    <?php echo base_url();?>img/reaHD.png 2x, 
-                                    <?php echo base_url();?>img/reaLD.png 0.5x
-                                "
-                            />
+                        <a href="<?php echo base_url();?>/realisations">
+                            <img src="<?php echo base_url();?>/assets/css/img/galery.png" />
                             <label>R&eacute;alisations</label>
                         </a>
                     </li>
                     <li class="firstElementSecondaryMenu">
-                        <a href="<?php echo base_url();?>contact">
-                            <img 
-                                src="<?php echo base_url();?>img/mailMD.png" 
-                                alt="ic&#244;ne contact" 
-                                srcset="
-                                    <?php echo base_url();?>img/mailHD.png 2x, 
-                                    <?php echo base_url();?>img/mailLD.png 0.5x
-                                "
-                            />
+                        <a href="<?php echo base_url();?>/contact">
+                            <img src="<?php echo base_url();?>/assets/css/img/contact.png" />
                             <label>Contact</label>
                         </a>
                     </li>
                     <li class="firstElementSecondaryMenu">
-                        <a href="<?php echo base_url();?>ou-nous-trouver">
-                            <img 
-                                src="<?php echo base_url();?>img/whereMD.png" 
-                                alt="ic&#244;ne localisation" 
-                                srcset="
-                                    <?php echo base_url();?>img/whereHD.png 2x, 
-                                    <?php echo base_url();?>img/whereLD.png 0.5x
-                                "
-                            />
+                        <a href="<?php echo base_url();?>/ou-nous-trouver">
+                            <img src="<?php echo base_url();?>/assets/css/img/where.png" />
                             <label>Où nous trouver</label>
                         </a>
                     </li>
                     <li class="firstElementSecondaryMenu">
-                        <a href="<?php echo base_url();?>qui-sommes-nous">
-                            <img 
-                                src="<?php echo base_url();?>img/whoMD.png" 
-                                alt="ic&#244;ne description de l'entreprise" 
-                                srcset="
-                                    <?php echo base_url();?>img/whoHD.png 2x, 
-                                    <?php echo base_url();?>img/whoLD.png 0.5x
-                                "
-                            />
+                        <a href="<?php echo base_url();?>/qui-sommes-nous">
+                            <img src="<?php echo base_url();?>/assets/css/img/who.png" />
                             <label>Qui sommes nous</label>
                         </a>
                     </li>
                     <li class="firstElementSecondaryMenu">
-                        <a href="<?php echo base_url();?>livre-d-or">
-                            <img 
-                                src="<?php echo base_url();?>img/goldMD.png" 
-                                alt="ic&#244;ne livre d'or" 
-                                srcset="
-                                    <?php echo base_url();?>img/goldHD.png 2x, 
-                                    <?php echo base_url();?>img/goldLD.png 0.5x
-                                "
-                            />
+                        <a href="<?php echo base_url();?>/livre-d-or">
+                            <img src="<?php echo base_url();?>/assets/css/img/book.png" />
                             <label>Livre d'or</label>
                         </a>
                     </li>
                 </ul>
-<?php
-    if(isset($h2))
-    {
-        echo("<h2 id='emplacement'>".$h2."</h2>");
-    }
-?>
             </nav>
+            <div id="wooding"></div>
         </header>
         
         <!-- Début du corps du site -->
