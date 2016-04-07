@@ -143,7 +143,17 @@ a:visited {
 }
 
 /* Corps de la page */
-
+main {
+    margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 15px solid $colorFont;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    border-image: url(/assets/css/img/hedge.jpg) 42 round stretch;
+}
 
 /* Bannière inférieure */
 footer {
@@ -203,6 +213,13 @@ footer div {
     }
     #secondaryMenu {
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 990px) {
+    main {
+        margin: 0;
+        margin-top: 1em;
+        padding: 1em;
     }
 }
 @media screen and (max-width: 750px) {
