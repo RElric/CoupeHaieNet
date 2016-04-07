@@ -91,15 +91,16 @@ a:visited {
     flex-direction: row;
     justify-content: space-between;
     margin: 1em;
-    padding-left:9em;
-    background-image: url(/assets/css/img/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 #accueilLink {
     display: flex;
     align-self: center;
     width: 35%;
+    padding-left:9em;
+    background-image: url(/assets/css/img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100px;
 }
 #titreGlobal {
     font-size: 35px;
@@ -111,6 +112,9 @@ a:visited {
     padding: 0;
     list-style: none;
 }
+.firstElementSecondaryMenu {
+    min-width: 134px;
+}
 .firstElementSecondaryMenu a {
     padding: 1em;
     display: flex;
@@ -120,6 +124,22 @@ a:visited {
 .firstElementSecondaryMenu img {
     width: 75px;
     height: 75px;
+}
+.menu-btn {
+    display: none;
+}
+.menu-btn span {
+    display: block;
+    width: 50px;
+    height: 10px;
+    margin: 5px 0;
+    background: $colorFont;
+    z-index: 99;
+}
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Corps de la page */
@@ -161,13 +181,42 @@ footer div {
 
 /* Media Queries */
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1250px) {
     #titreGlobal {
         display: none;
     }
 }
-@media screen and (max-width: 830px) {
-    #secondaryMenu {
+@media screen and (max-width: 1000px) {
+    .menu-btn {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .responsive-menu {
         display: none;
+    }
+    .mobile-nav {
+        margin-right: 5%;
+    }
+    #primaryMenu {
+        background-position: 5% 5%;
+    }
+    #secondaryMenu {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 750px) {
+    footer {
+        flex-direction: column;
+    }
+    footer div {
+        width: 100%;
+    }
+    #banInfLeft {
+        border-right: 0px solid black;
+        border-bottom: 0.25em solid $colorTonique;
+    }
+    #banInfRight {
+        padding: 1em;
     }
 }
