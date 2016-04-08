@@ -17,6 +17,17 @@
         <!-- Titre du site -->
         <title>CoupeHaie.Net // L'entretien des espaces verts</title>
         
+        <!-- CSS -->
+        
+        <!-- Inclusion des feuilles tierces -->
+        <!-- FlexSlider // Gestion de sliders-->
+        <!-- FancyBox // Gestion de galerie d'images-->
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/vendor/flexSlider/flexslider.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/vendor/fancyBox/source/jquery.fancybox.css" />
+        
+        <!-- Inclusion des feuilles personnelles -->
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/stylesheets/screen.css" />
+        
         <!-- Javascript -->
         
         <!-- Inclusion des librairies jQuery nécessaires pour l'execution de codes tiers -->
@@ -34,16 +45,21 @@
         <script src="<?php echo base_url();?>vendor/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
         <script src="<?php echo base_url();?>vendor/fancyBox/source/jquery.fancybox.pack.js"></script>
         
-        <!-- Inclusion de Google analytics  -->
+        <!-- Inclusion des scripts Google-->
+        <!-- Analytics // Traçage des données -->
+        <!-- Maps // Géolocalistion -->
         <script src="<?php echo base_url();?>/assets/javascript/analytics.js"></script>
+        <script src="<?php echo base_url();?>/assets/javascript/gMaps.js"></script>
+        <script async defer
+              src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+        </script>
+        
+        <!-- Amorçage du slider -->
+        <script src="<?php echo base_url();?>/assets/javascript/slider.js"></script>
         
         <!-- Inclusion de scripts personnels  -->
         <script src="<?php echo base_url();?>/assets/javascript/menu.js"></script>
-        
-        <!-- CSS -->
-        
-        <!-- Inclusion des feuilles personnelles -->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/stylesheets/screen.css" />
+        <script src="<?php echo base_url();?>/assets/javascript/script.js"></script>
     </head>
     
     <body>
