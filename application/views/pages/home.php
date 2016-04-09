@@ -1,4 +1,5 @@
 <!-- corps du document -->
+<!-- Une en-tête contenant un slider -->
 <header>
     <!-- Un slider utilisant FlexSlider.JS pour afficher les images des expériences désirées par le créateur -->
     <div class="flexslider" id='slider'>
@@ -8,8 +9,10 @@
                     echo ("
                         <li>
                             <figure>
-                                <img src='/assets/img/galery/".$element['imgPath']."'>
-                                <figcaption id='dataGalery'>
+                                <div id='imgbox'>
+                                    <img src='/assets/img/galery/".$element['imgPath']."'>
+                                </div>
+                                <figcaption id='dataGalery' class='flex-caption'>
                                     <h6>".$element['titre']."</h6>
                                     <ul>
                     ");
@@ -33,8 +36,10 @@
                 foreach($sliderXP as $element) {
                     echo ("
                         <li>
-                            <h2>".$element['comment']."</h2>
-                            <p>".$element['author']."</p>
+                            <div id='comSlide'>
+                                <h2 id='comTxt'>&quot; ".$element['comment']." &quot;</h2>
+                                <p id='comAuth'>".$element['author']."</p>
+                            </div>
                         </li>
                     ");
                 }
@@ -42,10 +47,15 @@
         </ul>
     </div>
 </header>
-<div>
+<!-- Le vif du sujet -->
+<div id="content">
     <!-- Une section contenant les actualités -->
     <section id="news">
-        <h2>Actualités</h2>
+        <div class='titreSection'> 
+            <div class="imgTitre"></div>
+            <h2>Actualités</h2>
+            <div class="imgTitre"></div>
+        </div>
         <ul id="newsList">
             <?php
                 foreach($news as $actus) {
@@ -56,8 +66,12 @@
         <p><a href='/actualites'>Et encore plus!</a></p>
     </section>
     <section id='homeWhere'>
-        <h2>Nous trouver</h2>
-        <div>
+        <div class='titreSection'> 
+            <div class="imgTitre"></div>
+            <h2>Nous trouver</h2>
+            <div class="imgTitre"></div>
+        </div>
+        <div id='homeWhereContent'>
             <div id="map"></div>
             <div id="coord">
                 <h3>Coupe Haie Net</h3>
