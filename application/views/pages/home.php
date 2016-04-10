@@ -37,7 +37,7 @@
                     echo ("
                         <li>
                             <div id='comSlide'>
-                                <h2 id='comTxt'>&quot; ".$element['comment']." &quot;</h2>
+                                <h2 id='comTxt'>&quot;&nbsp;".$element['comment']."&nbsp;&quot;</h2>
                                 <p id='comAuth'>".$element['author']."</p>
                             </div>
                         </li>
