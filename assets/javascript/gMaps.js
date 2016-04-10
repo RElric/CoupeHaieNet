@@ -1,19 +1,16 @@
 function initMap() {
-  // Create a map object and specify the DOM element for display.
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    scrollwheel: false,
-    zoom: 8,
-    mapTypeControl: true,
-    mapTypeControlOptions: {
-      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-      mapTypeIds: [
-        google.maps.MapTypeId.ROADMAP,
-        google.maps.MapTypeId.TERRAIN
-      ],
-      position: google.maps.ControlPosition.RIGHT_TOP
-    }
-
-  });
+    var myLatLng = {lat: 49.616398, lng: -1.727116};
+    
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 12
+    });
+    
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Coupe Haie Net'
+    });
 }
 

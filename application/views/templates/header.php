@@ -22,11 +22,11 @@
         <!-- Inclusion des feuilles tierces -->
         <!-- FlexSlider // Gestion de sliders-->
         <!-- FancyBox // Gestion de galerie d'images-->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/vendor/flexSlider/flexslider.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/vendor/fancyBox/source/jquery.fancybox.css" />
+        <link rel="stylesheet" type="text/css" href="/vendor/flexSlider/flexslider.css" />
+        <link rel="stylesheet" type="text/css" href="/vendor/fancyBox/source/jquery.fancybox.css" />
         
         <!-- Inclusion des feuilles personnelles -->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/css/stylesheets/screen.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/stylesheets/screen.css" />
         
         <!-- Javascript -->
         
@@ -41,25 +41,28 @@
         <!-- Inclusion des librairies tierces -->
         <!-- FlexSlider // Gestion de slider -->
         <!-- FancyBox // Gestion de galerie d'images -->
-        <script src="<?php echo base_url();?>vendor/flexSlider/jquery.flexslider-min.js"></script>
-        <script src="<?php echo base_url();?>vendor/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-        <script src="<?php echo base_url();?>vendor/fancyBox/source/jquery.fancybox.pack.js"></script>
+        <script src="/vendor/flexSlider/jquery.flexslider-min.js"></script>
+        <script src="/vendor/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script src="/vendor/fancyBox/source/jquery.fancybox.pack.js"></script>
         
         <!-- Inclusion des scripts Google-->
         <!-- Analytics // Traçage des données -->
         <!-- Maps // Géolocalistion -->
-        <script src="<?php echo base_url();?>/assets/javascript/analytics.js"></script>
-        <script src="<?php echo base_url();?>/assets/javascript/gMaps.js"></script>
+        <script src="/assets/javascript/analytics.js"></script>
+        <script src="/assets/javascript/gMaps.js"></script>
         <script async defer
               src="https://maps.googleapis.com/maps/api/js?callback=initMap">
         </script>
         
         <!-- Amorçage du slider -->
-        <script src="<?php echo base_url();?>/assets/javascript/slider.js"></script>
+        <script src="/assets/javascript/slider.js"></script>
+        <!-- Amorçage de la galerie -->
+        <script src="/assets/javascript/fancyBox.js"></script>
         
         <!-- Inclusion de scripts personnels  -->
-        <script src="<?php echo base_url();?>/assets/javascript/menu.js"></script>
-        <script src="<?php echo base_url();?>/assets/javascript/script.js"></script>
+        <script src="/assets/javascript/menu.js"></script>
+        <script src="/assets/javascript/script.js"></script>
+        <script src="/assets/javascript/contactVal.js"></script>
     </head>
     
     <body>
@@ -67,7 +70,7 @@
         <!-- Bandeau supérieur du site -->
         <header id="banSup">
             <nav id="primaryMenu">
-                <a href="<?php echo base_url();?>accueil" id="accueilLink">
+                <a href="/accueil" id="accueilLink">
                     <h1 id="titreGlobal">Coupe Haie Net</h1>
                 </a>
                 <div class="mobile-nav">
@@ -80,38 +83,38 @@
                     <div class="responsive-menu">
                         <ul id="secondaryMenu">
                             <li class="firstElementSecondaryMenu">
-                                <a href="<?php echo base_url();?>/actualites">
-                                    <img src="<?php echo base_url();?>/assets/css/img/news.png" />
+                                <a href="/actualites">
+                                    <img src="/assets/css/img/news.png" />
                                     <label>Actualit&eacute;s</label>
                                 </a>
                             </li>
                             <li class="firstElementSecondaryMenu">
-                                <a href="<?php echo base_url();?>/realisations">
-                                    <img src="<?php echo base_url();?>/assets/css/img/galery.png" />
+                                <a href="/realisations">
+                                    <img src="/assets/css/img/galery.png" />
                                     <label>R&eacute;alisations</label>
                                 </a>
                             </li>
                             <li class="firstElementSecondaryMenu">
-                                <a href="<?php echo base_url();?>/contact">
-                                    <img src="<?php echo base_url();?>/assets/css/img/contact.png" />
+                                <a href="/contact">
+                                    <img src="/assets/css/img/contact.png" />
                                     <label>Contact</label>
                                 </a>
                             </li>
                             <li class="firstElementSecondaryMenu">
-                                <a href="<?php echo base_url();?>/ou-nous-trouver">
-                                    <img src="<?php echo base_url();?>/assets/css/img/where.png" />
+                                <a href="/ou-nous-trouver">
+                                    <img src="/assets/css/img/where.png" />
                                     <label>Où nous trouver</label>
                                 </a>
                             </li>
                             <li class="firstElementSecondaryMenu">
-                                <a href="<?php echo base_url();?>/qui-sommes-nous">
-                                    <img src="<?php echo base_url();?>/assets/css/img/who.png" />
+                                <a href="/qui-sommes-nous">
+                                    <img src="/assets/css/img/who.png" />
                                     <label>Qui sommes nous</label>
                                 </a>
                             </li>
                             <li class="firstElementSecondaryMenu">
-                                <a href="<?php echo base_url();?>/livre-d-or">
-                                    <img src="<?php echo base_url();?>/assets/css/img/book.png" />
+                                <a href="/livre-d-or">
+                                    <img src="/assets/css/img/book.png" />
                                     <label>Livre d'or</label>
                                 </a>
                             </li>

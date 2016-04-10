@@ -44,7 +44,7 @@
         flex-direction: column;
     }
     main {
-        min-height: 90vh;
+        min-height: 70vh;
     }
 
     /* Textes */
@@ -279,7 +279,8 @@
         /* La section contact de l'accueil */
             /* Google Map */
                 #map {
-                    width: 150px;
+                    width: 100%;
+                    height: 150px;
                     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
                     margin-right: 1em;
                 }
@@ -304,7 +305,113 @@
                     background-repeat: no-repeat;
                     background-position: bottom center;
                 }
-
+        /* Page de contact */
+            .titrePage {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorBanInf;
+                margin-bottom: 1em;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+            .titrePage h2 {
+                font-size: 40px;
+                padding: 0;
+                margin: 0;
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+            #formContacter {
+                width: 100%;
+            }
+            #formContact, #formMsgSubmit {
+                display: flex;
+                flex-direction: row;
+            }
+            #civil, #infoContact {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                padding: 1em;
+                align-items: center;
+            }
+            #civil div, #infoContact div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                width: 100%;
+            }
+            #txtMsg {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1em;
+                width: 75%;
+            }
+            #submitContact {
+                width: 25%;
+            }
+            input {
+                margin: 0.5em;
+            }
+            input[type=text] {
+                background-color: white;
+                border: none;
+                padding: 0.25em;
+                width: 65%;
+            }
+            textarea {
+                background-color: white;
+                border: none;
+                margin: 1em;
+            }
+            #submitContact {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #submitContact input[type=submit] {
+                background-color: $colorBG;
+                color: $colorFont;
+                padding: 0;
+                margin: 0;
+                border: none;
+                padding-top: 90px;
+                background-image: url(/assets/css/img/contactGreen.png);
+                background-repeat: no-repeat;
+                background-position: top center;
+            }
+        /* Page de localisation */
+            #whereContent {
+                display: flex;
+                flex-direction: row;
+            }
+            #whereContent #map {
+                width: 75%;
+                height: 300px;
+                padding: 1em;
+            }
+            #coordsWhere {
+                width: 25%;
+                background-color: $colorTonique;
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        /* Galerie */
+.fancyImg {
+    width: 100%;
+}
+.fancyGalery {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
 
 /* Media Queries */
 
@@ -317,7 +424,7 @@
         .menu-btn {
             display: flex;
             flex-direction: column;
-            align-items:center;
+            align-items: center;
         }
         .responsive-menu {
             display: none;
@@ -339,9 +446,40 @@
             padding: 1em;
         }
     }
+    @media screen and (max-width: 810px) {
+        main {
+            padding: 0;
+        }
+    }
     @media screen and (max-width: 800px) {
         #comAuth {
             margin: 0;
+        }
+    }
+    @media screen and (max-width: 780px) {
+        #formContact, #formMsgSubmit {
+            flex-direction: column;
+        }
+        #civil, #infoContact {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        input[type=text] {
+            width: 85%;
+        }
+        #txtMsg {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        #submitContact {
+            display: flex;
+            width: 100%;
+            align-content: center;
         }
     }
     @media screen and (max-width: 750px) {
@@ -380,8 +518,16 @@
             height: 175px;
         }
     }
-@media screen and (max-width: 450px) {
-    #map {
-        display: none;
+    @media screen and (max-width: 620px) {
+        #whereContent #map {
+            display: none;
+        }
+        #coordsWhere {
+            background-color: inherit;
+        }
     }
+    @media screen and (max-width: 450px) {
+        #map {
+            display: none;
+        }
 }
