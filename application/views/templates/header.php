@@ -26,6 +26,7 @@
         <!-- FancyBox // Gestion de galerie d'images-->
         <link rel="stylesheet" type="text/css" href="/vendor/flexSlider/flexslider.css" />
         <link rel="stylesheet" type="text/css" href="/vendor/fancyBox/source/jquery.fancybox.css" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,400italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         
         <!-- Inclusion des feuilles personnelles -->
         <link rel="stylesheet" type="text/css" href="/assets/css/stylesheets/screen.css" />
