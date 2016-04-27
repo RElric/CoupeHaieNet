@@ -10,7 +10,7 @@
                         <li>
                             <figure>
                                 <div id='imgbox'>
-                                    <img src='/assets/img/galery/".$element['imgPath']."'>
+                                    <img src='assets/img/galery/".$element['imgPath']."'>
                                 </div>
                                 <figcaption id='dataGalery' class='flex-caption'>
                                     <h6>".$element['titre']."</h6>
@@ -59,11 +59,11 @@
         <ul id="newsList">
             <?php
                 foreach($news as $actus) {
-                    echo("<li><a href='/actualites/read/".$actus['slug']."'>".$actus['title']."</a></li>");
+                    echo("<li><a href='actualites#".$actus['slug']."'>".$actus['title']."</a></li>");
                 }
             ?>
         </ul>
-        <p><a href='/actualites'>Et encore plus!</a></p>
+        <p><a href='actualites'>Et encore plus!</a></p>
     </section>
     <section id='homeWhere'>
         <div class='titreSection'> 
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div>
-            <a href="/nous-contacter" id="contacting">Nous contacter</a>
+            <a href="nous-contacter" id="contacting">Nous contacter</a>
         </div>
     </section>
 </div>

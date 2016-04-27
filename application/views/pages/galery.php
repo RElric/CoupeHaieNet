@@ -8,9 +8,9 @@
             <?php 
                 foreach($sliderImg as $element) {
                     echo ("
-                        <div class='fancyGalery'><a class='grouped_elements' rel='group1' href='/assets/img/galery/"
+                        <div class='fancyGalery'><a class='grouped_elements' rel='group1' href='assets/img/galery/"
                         .$element['imgPath']
-                        ."'><img src='/assets/img/galery/"
+                        ."'><img src='assets/img/galery/"
                         .$element['imgPath']
                         ."' class='fancyImg' /></a></div>
                     ");

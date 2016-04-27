@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
     <head lang="fr">
         <!-- Définition du jeu de caractère -->
@@ -9,6 +10,7 @@
         <meta name="description" content="Site de l'entreprise d'entretien d'espaces verts CoupeHaieNet" />
         <meta name="keywords" content="espaces verts, entretien, jardinage, coupe, haie, manche, normandie, france" />
         <meta name="author" content="Elric Reffuveille" />
+        <meta name="viewport" content="initial-scale=1.0" />
         
         <!-- Balises "http-equiv" -->
         <meta http-equiv="Content-Language" content="fr-FR" />

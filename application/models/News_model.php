@@ -2,11 +2,10 @@
 
 class News_model extends CI_Model {
 
-    public function getBySlug($slug) {
-        $this->db->where('slug', $slug);
+    public function getNews() {
+        $this->db->order_by('id','DESC');
         $query = $this->db->get('news');
-        $article = $query->result();
-        return $article;
+        return $query->result_array();
     }
     public function getTopNews() {
         $this->db->order_by('id','DESC');

@@ -45,6 +45,15 @@
     }
     main {
         min-height: 70vh;
+        margin-top: 2em;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-left: 1em;
+        padding-right: 1em;
+        border: 15px solid $colorFont;
+        border-top: 0px solid $colorFont;
+        border-bottom: 0px solid $colorFont;
+        border-image: url(/assets/css/img/hedge.jpg) 42 round stretch;
     }
 
     /* Textes */
@@ -140,19 +149,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
-
-    /* Corps de la page */
-        main {
-            margin-top: 2em;
-            margin-left: 10%;
-            margin-right: 10%;
-            padding-left: 1em;
-            padding-right: 1em;
-            border: 15px solid $colorFont;
-            border-top: none;
-            border-bottom: none;
-            border-image: url(/assets/css/img/hedge.jpg) 42 round stretch;
         }
 
     /* Bannière inférieure */

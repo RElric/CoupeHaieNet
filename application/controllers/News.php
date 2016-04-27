@@ -8,12 +8,8 @@
             parent::__construct();
             $this->load->model('news_model', 'news');
         }
-        public function index() { 
-            $this->load->view("pages/news.php");
-        }
-        public function read($slug) {
-            
-            $article = $this->news->getBySlug($slug);
-            $this->load->view('pages/article.php', ["slug" => $slug, "article" => $article]);
+        public function index($slug = null) { 
+            $actus = $this->news->getNews();
+            $this->load->view("pages/news.php", ["actus" => $actus, "slug" => $slug]);
         }
     }
