@@ -3,24 +3,24 @@
                 foreach($actus as $news) {
                     if($news['slug'] == $slug)
                         echo(
-                            "<div id='selectedNews'><h2>".
+                            "<article id='".$news['slug']."' class='selectedNews'><h2>".
                                 $news['title'].
                                 "</h2>".
                                 "<p>".
                                     $news['text'].
                                 "</p>".
-                            "</div>"
+                            "</article>"
                         );
                     else
                         echo(
-                            "<div><h2>".
+                            "<article id='".$news['slug']."'><h2>".
                                 $news['title'].
                                 "</h2>".
                                 "<p>".
                                     $news['text'].
                                 "</p>".
-                            "</div>"
+                            "</article>"
                         );
-                }
+            }    
             ?>
         </div>

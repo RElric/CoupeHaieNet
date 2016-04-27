@@ -59,7 +59,7 @@
         <ul id="newsList">
             <?php
                 foreach($news as $actus) {
-                    echo("<li><a href='actualites#".$actus['slug']."'>".$actus['title']."</a></li>");
+                    echo("<li><a href='actualites/".$actus['slug']."'>".$actus['title']."</a></li>");
                 }
             ?>
         </ul>
