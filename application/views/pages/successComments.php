@@ -1,0 +1,1 @@
+<p>Votre commentaire a été envoyé et sera validé le plus vite possible. Merci de votre implication.</p>

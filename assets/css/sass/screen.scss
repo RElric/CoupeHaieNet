@@ -430,6 +430,53 @@
                 background-color: $colorTonique;
             }
 
+    /* Livre d'or */
+#commentWrapper {
+    width: 100%;
+    margin-bottom: 1em;
+}
+.commentDisplay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.commentContent {
+    font-weight: 700;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 1em;
+}
+.commentAuthor {
+    align-self: flex-end;
+    padding-right: 20%;
+}
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#commentForm form {
+    width: 100%;
+}
+#commentForm div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#commentForm input[type="submit"] {
+    background-color: $colorTonique;
+    font-weight: 700;
+    padding: 1em;
+    border: none;
+    color: $colorFont;
+}
+
 /* Media Queries */
 
     @media screen and (max-width: 1250px) {

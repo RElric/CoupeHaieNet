@@ -15,14 +15,14 @@
 
             if ($this->form_validation->run() == FALSE)
             {
-                $this->load->view('pages/contact');
+                $this->load->view('pages/contact.php');
             }
             else
             {
                 $this->load->helper('email');
                 send_email('contact@coupehaie.net', $this->input->post('object'), $this->input->post('nom').' '.$this->input->post('prenom').' a envoyé '.$this->input->post('msgContact'));
-                $this->load->view('pages/successfull');
-                $this->load->view('pages/contact');
+                $this->load->view('pages/successfull.php');
+                $this->load->view('pages/contact.php');
             }      
         }
     }
